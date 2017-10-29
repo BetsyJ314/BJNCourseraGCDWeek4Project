@@ -11,7 +11,7 @@ The data is from the phone's embedded accelerometer and gyroscope.  3 axis were 
 The training data consists of 70% of the volunteers and the test data 30%. 
 
 Data and CodeBook - For each record it is provided:
-- X_train and X_test: A 561-feature vector with time and frequency domain variables.
+- X_train and X_test: A 561-feature vector with time and frequency domain variables. It's a large file that can be retrieved here: http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 - features.txt: A list of the 561 measures
 	Note: t represents time, and f represents frequency
@@ -23,7 +23,7 @@ Data and CodeBook - For each record it is provided:
       6.	Gyro=Gyroscope
       7.	Mag=Magnitude
       
--Y_train and Y_test: activity data
+-Y_train and Y_test: activity data. files than can be found using the link above.
 
 - activity labels.txt: table showing the activity code and description
 
