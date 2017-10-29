@@ -23,7 +23,7 @@ Data and CodeBook - For each record it is provided:
       6.	Gyro=Gyroscope
       7.	Mag=Magnitude
       
--Y_train and Y_test: activity data. files than can be found using the link above.
+- Y_train and Y_test: activity data. files than can be found using the link above.
 
 - activity labels.txt: table showing the activity code and description
 
