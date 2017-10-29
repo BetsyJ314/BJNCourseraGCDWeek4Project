@@ -33,4 +33,4 @@ Data and CodeBook - For each record it is provided:
 
 Script - run_analysis.R
 
-Tidy Dataset - MeanData2.txt
+Tidy Dataset - For each combination of Volunteer and Activity (180 rows), the mean of features representing the mean and standard deviation is calculated (69 columns).  The file: MeanData2.txt
