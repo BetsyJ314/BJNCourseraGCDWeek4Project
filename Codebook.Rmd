@@ -1,0 +1,99 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
+##CodeBook 
+
+(Note I created a separate file after the original submission.  I originally included the codebook as part of the ReadMe file) 
+
+For each record it is provided (and files are included in the repo):
+  
+- X_train and X_test: A 561-feature vector with time and frequency domain variables. It's a large file that can be retrieved here: http://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+- features.txt: 
+      A list of the 561 measures Note: t represents time, and f represents frequency 1.	body = body movement 2. gravity = acceleration of           gravity 3.	std()=StandardDeviation 4.	mean()=Mean 5.	Acc=Accelerometer 6.	Gyro=Gyroscope 7. Mag=Magnitude
+      
+      The units given are g’s for the accelerometer and rad/sec for the gyro and g/sec and rad/sec/sec for the corresponding jerks.
+
+
+- Y_train and Y_test: activity data. files than can be found using the link above.
+
+- activity labels.txt: table showing the activity code and description
+
+- subject_train.txt and subject_test.txt: An identifier of the subject (volunteer) who carried out the experiment.
+
+- 'features_info.txt': An informational file with descriptions of the variables used on the feature vector.
+
+Tidy Dataset - For each combination of Volunteer and Activity (180 rows), the mean of features representing the mean and standard deviation is calculated (69 columns).  The file: MeanData2.txt
+
+The columns are the following.  Other than the first 3 columns, the mean of each measure is in the MeanData2.txt file.:
+Volunteer  
+activityName 
+activityNum 
+TimeBodyAccelerometer-Mean()-X 
+TimeBodyAccelerometer-Mean()-Y  
+TimeBodyAccelerometer-Mean()-Z  
+TimeBodyAccelerometer-StandardDeviation()-X  
+TimeBodyAccelerometer-StandardDeviation()-Y  
+TimeBodyAccelerometer-StandardDeviation()-Z  
+TimeGravityAcceleration-Mean()-X  
+TimeGravityAcceleration-Mean()-Y  
+TimeGravityAcceleration-Mean()-Z  
+TimeGravityAcceleration-StandardDeviation()-X  
+TimeGravityAcceleration-StandardDeviation()-Y  
+TimeGravityAcceleration-StandardDeviation()-Z  
+TimeBodyAccelerometerJerk-Mean()-X  
+TimeBodyAccelerometerJerk-Mean()-Y  
+TimeBodyAccelerometerJerk-Mean()-Z  
+TimeBodyAccelerometerJerk-StandardDeviation()-X  
+TimeBodyAccelerometerJerk-StandardDeviation()-Y  
+TimeBodyAccelerometerJerk-StandardDeviation()-Z  
+TimeBodyGyroscope-Mean()-X  
+TimeBodyGyroscope-Mean()-Y  
+TimeBodyGyroscope-Mean()-Z  
+TimeBodyGyroscope-StandardDeviation()-X  
+TimeBodyGyroscope-StandardDeviation()-Y  
+TimeBodyGyroscope-StandardDeviation()-Z  
+TimeBodyGyroscopeJerk-Mean()-X  
+TimeBodyGyroscopeJerk-Mean()-Y  
+TimeBodyGyroscopeJerk-Mean()-Z  
+TimeBodyGyroscopeJerk-StandardDeviation()-X  
+TimeBodyGyroscopeJerk-StandardDeviation()-Y  
+TimeBodyGyroscopeJerk-StandardDeviation()-Z  
+TimeBodyAccelerometerMagnitude-Mean()  
+TimeBodyAccelerometerMagnitude-StandardDeviation()  
+TimeGravityAccelerationMagnitude-Mean()  
+TimeGravityAccelerationMagnitude-StandardDeviation()  
+TimeBodyAccelerometerJerkMagnitude-Mean()  
+TimeBodyAccelerometerJerkMagnitude-StandardDeviation()  
+TimeBodyGyroscopeMagnitude-Mean()  
+TimeBodyGyroscopeMagnitude-StandardDeviation()  
+TimeBodyGyroscopeJerkMagnitude-Mean()  
+TimeBodyGyroscopeJerkMagnitude-StandardDeviation()  
+FrequencyBodyAccelerometer-Mean()-X  
+FrequencyBodyAccelerometer-Mean()-Y  
+FrequencyBodyAccelerometer-Mean()-Z  
+FrequencyBodyAccelerometer-StandardDeviation()-X  
+FrequencyBodyAccelerometer-StandardDeviation()-Y  
+FrequencyBodyAccelerometer-StandardDeviation()-Z   
+FrequencyBodyAccelerometerJerk-Mean()-X  
+FrequencyBodyAccelerometerJerk-Mean()-Y  
+FrequencyBodyAccelerometerJerk-Mean()-Z  
+FrequencyBodyAccelerometerJerk-StandardDeviation()-X  
+FrequencyBodyAccelerometerJerk-StandardDeviation()-Y  
+FrequencyBodyAccelerometerJerk-StandardDeviation()-Z  
+FrequencyBodyGyroscope-Mean()-X  
+FrequencyBodyGyroscope-Mean()-Y  
+FrequencyBodyGyroscope-Mean()-Z  
+FrequencyBodyGyroscope-StandardDeviation()-X  
+FrequencyBodyGyroscope-StandardDeviation()-Y  
+FrequencyBodyGyroscope-StandardDeviation()-Z  
+FrequencyBodyAccelerometerMagnitude-Mean()  
+FrequencyBodyAccelerometerMagnitude-StandardDeviation()  
+FrequencyBodyBodyAccelerometerJerkMagnitude-Mean()  
+FrequencyBodyBodyAccelerometerJerkMagnitude-StandardDeviation()  
+FrequencyBodyBodyGyroscopeMagnitude-Mean()  
+FrequencyBodyBodyGyroscopeMagnitude-StandardDeviation()  
+FrequencyBodyBodyGyroscopeJerkMagnitude-Mean()  
+FrequencyBodyBodyGyroscopeJerkMagnitude-StandardDeviation()  
